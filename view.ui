@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1101</width>
+    <height>653</height>
+   </rect>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1100</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">baackground-color: Whitrgb(255, 255, 255)
+</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-130</x>
+     <y>-20</y>
+     <width>1231</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:lightblue</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>100</y>
+      <width>591</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(189, 189, 189)</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>401</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>TICKET NUMBER</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_ticket1">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>70</y>
+       <width>221</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>100</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red;</string>
+     </property>
+     <property name="text">
+      <string>001</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>230</y>
+       <width>421</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>PLEASE PROCEED TO</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_service1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>300</y>
+       <width>551</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red;
+
+</string>
+     </property>
+     <property name="text">
+      <string>SERVICES</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>30</y>
+      <width>401</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(189, 189, 189);
+border-radius: 15</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>TICKET NUMBER</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_service2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red;
+
+</string>
+     </property>
+     <property name="text">
+      <string>SERVICES</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>191</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>PLEASE PROCEED TO</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_ticket2">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>40</y>
+       <width>111</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red;</string>
+     </property>
+     <property name="text">
+      <string>002</string>
+     </property>
+    </widget>
+    <zorder>label_service2</zorder>
+    <zorder>label_6</zorder>
+    <zorder>label_ticket2</zorder>
+    <zorder>label_5</zorder>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>190</y>
+      <width>401</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(189, 189, 189);
+border-radius: 15</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>TICKET NUMBER</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_service3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red;
+
+</string>
+     </property>
+     <property name="text">
+      <string>SERVICES</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>191</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>PLEASE PROCEED TO</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_ticket3">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>40</y>
+       <width>111</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red;</string>
+     </property>
+     <property name="text">
+      <string>003</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_5">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>350</y>
+      <width>401</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(189, 189, 189);
+border-radius: 15</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>TICKET NUMBER</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_service4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red;
+
+</string>
+     </property>
+     <property name="text">
+      <string>SERVICES</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>191</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>PLEASE PROCEED TO</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_ticket4">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>40</y>
+       <width>111</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red;</string>
+     </property>
+     <property name="text">
+      <string>004</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_6">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>510</y>
+      <width>401</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(189, 189, 189);
+border-radius: 15</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>TICKET NUMBER</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_service5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red;
+
+</string>
+     </property>
+     <property name="text">
+      <string>SERVICES</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>191</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>PLEASE PROCEED TO</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_ticket5">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>40</y>
+       <width>111</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red;</string>
+     </property>
+     <property name="text">
+      <string>005</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>20</y>
+      <width>261</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>35</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Now Serving</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>
