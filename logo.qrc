@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>images - Copy/logo2.png</file>
     <file>logo-removebg-preview.png</file>
     <file>images/hpt.jpg</file>
     <file>images/1.png</file>

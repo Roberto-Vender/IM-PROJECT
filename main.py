@@ -3,7 +3,7 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QComboBox
 from PyQt5.uic import loadUi
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPixmap
+
 
 
 
@@ -16,15 +16,6 @@ class Fill(QtWidgets.QDialog):
 
         # Start ticket from 1
         self.ticket_number = 1
-
-        pixmap = QPixmap("images/logo2.png")
-        self.logo_label.setPixmap(pixmap)
-
-        # Optionally, adjust the size of the label to fit the logo
-        self.logo_label.setScaledContents(True)  # To make the logo scale with the QLabel size
-
-        # You can set the alignment if needed
-        self.logo_label.setAlignment(Qt.AlignCenter)
 
         # Call the UI
         self.tableWidget = self.findChild(QtWidgets.QTableWidget, "tableWidget")
