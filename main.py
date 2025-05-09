@@ -5,9 +5,6 @@ from PyQt5.uic import loadUi
 from PyQt5.QtCore import Qt
 
 
-
-
-
 # Main window class
 class Fill(QtWidgets.QDialog):
     def __init__(self):
