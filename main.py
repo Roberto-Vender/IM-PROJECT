@@ -3,9 +3,9 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QComboBox
 from PyQt5.uic import loadUi
 from PyQt5.QtCore import Qt
+from PyQt5 import QtWidgets, uic
 
 
-# Main window class
 class Fill(QtWidgets.QDialog):
     def __init__(self):
         super(Fill, self).__init__()
@@ -14,12 +14,20 @@ class Fill(QtWidgets.QDialog):
         # Start ticket from 1
         self.ticket_number = 1
 
-        # Call the UI
+        # Find widgets
         self.tableWidget = self.findChild(QtWidgets.QTableWidget, "tableWidget")
         self.combo_box = self.findChild(QComboBox, "combo_box1")
         self.gtvbutton = self.findChild(QtWidgets.QPushButton, "gtvbutton")
         self.submitbutton = self.findChild(QtWidgets.QPushButton, "submitbutton")
         self.cancelbutton = self.findChild(QtWidgets.QPushButton, "cancelbutton")
+        self.calendarWidget = self.findChild(QtWidgets.QCalendarWidget, "calendarWidget")
+        self.btnToggleCalendar = self.findChild(QtWidgets.QPushButton, "btnToggleCalendar")
+
+        # Hide calendar at startup
+        self.calendarWidget.hide()
+
+        # Connect calendar toggle button
+        self.btnToggleCalendar.clicked.connect(self.toggle_calendar)
 
         # Create table
         self.tableWidget.setColumnCount(4)
@@ -30,12 +38,21 @@ class Fill(QtWidgets.QDialog):
 
         self.tableWidget.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
 
-        # Connect the buttons
+        # Connect buttons
         self.submitbutton.clicked.connect(self.click_submit)
         self.viewbutton.clicked.connect(self.open_view)
         self.cancelbutton.clicked.connect(self.click_cancel)
 
         self.view_window = None
+    #calendar
+    def toggle_calendar(self):
+        if self.calendarWidget.isVisible():
+            self.calendarWidget.hide()
+            self.btnToggleCalendar.setText("Select Date")
+        else:
+            self.calendarWidget.show()
+            self.btnToggleCalendar.setText("Hide Calendar")
+
 
     def click_submit(self):
         row_position = self.tableWidget.rowCount()

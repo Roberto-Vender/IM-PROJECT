@@ -367,14 +367,27 @@ rounded</string>
       <string>Date Of Birth</string>
      </property>
     </widget>
-    <widget class="QDateEdit" name="dateEdit">
+    <widget class="QCalendarWidget" name="calendarWidget">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>70</y>
+       <width>312</width>
+       <height>183</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnToggleCalendar">
      <property name="geometry">
       <rect>
        <x>300</x>
        <y>40</y>
-       <width>121</width>
+       <width>101</width>
        <height>31</height>
       </rect>
+     </property>
+     <property name="text">
+      <string>Select Date</string>
      </property>
     </widget>
     <zorder>label_2</zorder>
@@ -391,7 +404,8 @@ rounded</string>
     <zorder>lineEdit_6</zorder>
     <zorder>comboBox</zorder>
     <zorder>label_7</zorder>
-    <zorder>dateEdit</zorder>
+    <zorder>calendarWidget</zorder>
+    <zorder>btnToggleCalendar</zorder>
    </widget>
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
